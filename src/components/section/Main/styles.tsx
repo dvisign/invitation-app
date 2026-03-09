@@ -4,12 +4,20 @@ import card from "@/assets/images/card.png";
 
 export const MainSectionStyles = styled.section`
   width: 100%;
-  height: 100vh;
+  padding-bottom: 200%;
   background-image: url(${parents});
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+
+  /* 1. 750px 미만 (모바일 기본) 환경에서는 cover 적용 */
+  background-size: cover;
+
+  /* 2. 750px 이상 환경에서 auto로 덮어씌움 */
+  @media (min-width: 750px) {
+    background-size: auto;
+  }
 `;
 
 export const BrightWrapperStyles = styled.div`
@@ -45,8 +53,8 @@ export const BrightContentStyles = styled.div`
     text-align: center;
     > h1 {
       font-family: "RIDIBatang";
-      font-size: calc(1rem + 1vw);
-      line-height: 1.8rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
       color: #42382a;
       margin-bottom: 1.5rem;
     }

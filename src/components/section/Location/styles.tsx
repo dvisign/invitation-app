@@ -33,8 +33,8 @@ export const LocationWrapperStyles = styled.section`
 
 export const MapContainer = styled.div`
   width: 100%;
-  max-width: 400px; /* 모바일 화면에 맞게 제한 */
   aspect-ratio: 4 / 3; /* 지도 비율을 4:3으로 안정적으로 고정 */
   background-color: #eee; /* 지도 로딩 전 회색 배경 */
   border: 1px solid #ddd;
+  margin-top: 2rem;
 `;
