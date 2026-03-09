@@ -1,0 +1,224 @@
+:export {
+  primary: #0265dc;
+  onPrimary: #fff;
+  secondary: #2c77fe;
+  onSecondary: #fff;
+  background: #fff;
+  backgroundVariant1: #fafafa;
+  backgroundVariant2: #f5f5f5;
+  backgroundVariant3: #1a1a1a;
+  onBackground: #000;
+  onBackgroundVariant: #fff;
+  info: #076bff;
+  onInfo: #fff;
+  success: #0b7b0b;
+  onSuccess: #fff;
+  warning: #f8c41c;
+  onWarning: #000;
+  error: #cc140f;
+  onError: #fff;
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Pretendard Black"),
+    url("../font/Pretendard-Black.woff2") format("woff2"),
+    url("../font/Pretendard-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local("Pretendard ExtraBold"),
+    url("../font/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("../font/Pretendard-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Pretendard Bold"),
+    url("../font/Pretendard-Bold.woff2") format("woff2"),
+    url("../font/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Pretendard SemiBold"),
+    url("../font/Pretendard-SemiBold.woff2") format("woff2"),
+    url("../font/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Pretendard Medium"),
+    url("../font/Pretendard-Medium.woff2") format("woff2"),
+    url("../font/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Pretendard Regular"),
+    url("../font/Pretendard-Regular.woff2") format("woff2"),
+    url("../font/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local("Pretendard Light"),
+    url("../font/Pretendard-Light.woff2") format("woff2"),
+    url("../font/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-display: swap;
+  src:
+    local("Pretendard ExtraLight"),
+    url("../font/Pretendard-ExtraLight.woff2") format("woff2"),
+    url("../font/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-display: swap;
+  src:
+    local("Pretendard Thin"),
+    url("../font/Pretendard-Thin.woff2") format("woff2"),
+    url("../font/Pretendard-Thin.woff") format("woff");
+}
+html,
+body {
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+form {
+  box-sizing: border-box;
+}
+table,
+tbody,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-size: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  outline: none;
+}
+button,
+input,
+select {
+  overflow: visible;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc;
+  background: rgba(0, 0, 0, 0);
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+}
+.test {
+  color: red;
+}
