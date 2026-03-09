@@ -16,11 +16,23 @@ const Location = () => {
     //     "width=1160, height=600",
     //   );
     // } else {
-    //   try {
-    //     Kakao.Navi.start(locations);
-    //   } catch (e) {
-    //     alert("알수없는 오류가 발생했습니다.");
-    //   }
+    try {
+      // @ts-expect-error: Kakao 전역 객체 타입 누락 무시
+      Kakao.Navi.start({
+        name: "충주 중앙하이츠",
+        x: 127.82565696643323,
+        y: 36.98889759894559,
+        coordType: "wgs84",
+      });
+    } catch (e: unknown) {
+      if (e instanceof Error) {
+        // 조건문을 통과하면 여기서부터 e는 완벽한 Error 타입으로 추론됨
+        alert(`오류: ${e.message}`);
+      } else {
+        // Error 객체가 아닌 다른 무언가가 던져졌을 때의 예외 처리
+        alert("알 수 없는 오류가 발생했습니다.");
+      }
+    }
     // }
   };
 
@@ -42,10 +54,6 @@ const Location = () => {
       </MapContainer>
       <button onClick={naver}>naver</button>
       <button onClick={kakaoNavi}>kakaoNavi</button>
-      {
-        // @ts-expect-error: Kakao SDK 글로벌 객체 타입 누락
-        Kakao.Navi ? "있음" : "없음"
-      }
     </LocationWrapperStyles>
   );
 };
