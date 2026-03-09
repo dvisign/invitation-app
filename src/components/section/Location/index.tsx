@@ -2,10 +2,27 @@ import {Map, MapMarker} from "react-kakao-maps-sdk";
 import {LocationWrapperStyles, MapContainer} from "./styles";
 
 const Location = () => {
-  // const [loading, error] = useKakaoLoader({
-  //   appkey: "a64558d99894639bccef41457792c4d7",
-  // });
-  const location = {lat: 37.74913611, lng: 128.8784972};
+  const location = {lat: 36.98889759894559, lng: 127.82565696643323};
+  const naver = () => {
+    window.open(
+      "http://map.naver.com/?menu=location&pinType=place&lat=36.98889759894559&lng=127.82565696643323&title=충주 중앙하이츠",
+    );
+  };
+  const kakaoNavi = () => {
+    // if (!is_Mobile) {
+    //   window.open(
+    //     `http://kko.to/${mapId}`,
+    //     "PopupWin",
+    //     "width=1160, height=600",
+    //   );
+    // } else {
+    //   try {
+    //     Kakao.Navi.start(locations);
+    //   } catch (e) {
+    //     alert("알수없는 오류가 발생했습니다.");
+    //   }
+    // }
+  };
   return (
     <LocationWrapperStyles>
       <h2>Location</h2>
@@ -17,12 +34,14 @@ const Location = () => {
         <Map
           center={location}
           style={{width: "100%", height: "100%"}}
-          level={3} // 지도의 확대 레벨 (숫자가 작을수록 확대됨)
-          draggable={true} // 모바일에서 터치로 이동 가능하게
-        >
+          level={3}
+          draggable={true}>
           <MapMarker position={location} />
         </Map>
       </MapContainer>
+      <button onClick={naver}>naver</button>
+      <button onClick={kakaoNavi}>kakaoNavi</button>
+      {window?.Kakao?.Navi ? "있음" : "없음"}
     </LocationWrapperStyles>
   );
 };
