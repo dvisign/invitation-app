@@ -12,21 +12,21 @@ const Share = () => {
       description: "",
       imageUrl: "https://invitation-app-theta.vercel.app/share.jpg",
       link: {
-        mobileWebUrl: "https://invitation-app-theta.vercel.app/",
-        webUrl: "https://invitation-app-theta.vercel.app/",
+        mobileWebUrl: "https://invitation-app-theta.vercel.app",
+        webUrl: "https://invitation-app-theta.vercel.app",
       },
       imageWidth: 800,
       imageHeight: 800,
     };
     const buttons = {
-      title: "청첩장 보기",
+      title: "초대장 보기",
       link: {
-        mobileWebUrl: "https://invitation-app-theta.vercel.app/",
-        webUrl: "https://invitation-app-theta.vercel.app/",
+        mobileWebUrl: "https://invitation-app-theta.vercel.app",
+        webUrl: "https://invitation-app-theta.vercel.app",
       },
     };
     // @ts-expect-error: Kakao 전역 객체 타입 누락 무시
-    window.Kakao.Link.sendDefault({
+    Kakao.Link.sendDefault({
       objectType: "feed",
       content: content,
       buttons: [buttons],
