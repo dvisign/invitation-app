@@ -23,6 +23,7 @@ const Location = () => {
     //   }
     // }
   };
+
   return (
     <LocationWrapperStyles>
       <h2>Location</h2>
@@ -41,7 +42,10 @@ const Location = () => {
       </MapContainer>
       <button onClick={naver}>naver</button>
       <button onClick={kakaoNavi}>kakaoNavi</button>
-      {window?.Kakao?.Navi ? "있음" : "없음"}
+      {
+        // @ts-expect-error: Kakao SDK 글로벌 객체 타입 누락
+        window?.Kakao?.Navi ? "있음" : "없음"
+      }
     </LocationWrapperStyles>
   );
 };
