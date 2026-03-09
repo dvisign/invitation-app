@@ -18,7 +18,7 @@ const Location = () => {
     // } else {
     try {
       // @ts-expect-error: Kakao 전역 객체 타입 누락 무시
-      Kakao.Navi.start({
+      window.Kakao.Navi.start({
         name: "충주 중앙하이츠",
         x: 127.82565696643323,
         y: 36.98889759894559,
