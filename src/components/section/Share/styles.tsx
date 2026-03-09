@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 
 export const ShareWrapper = styled.div`
   width: 100%;
-  // max-width: 750px;
-  // position: fixed;
-  // bottom: 0;
+  max-width: 750px;
+  position: fixed;
+  bottom: 0;
   z-index: 1000;
   #kakaoShereBtn {
     background: #fee500;
