@@ -44,7 +44,7 @@ const Location = () => {
       <button onClick={kakaoNavi}>kakaoNavi</button>
       {
         // @ts-expect-error: Kakao SDK 글로벌 객체 타입 누락
-        Kakao.Navi.start ? "있음" : "없음"
+        Kakao.Navi ? "있음" : "없음"
       }
     </LocationWrapperStyles>
   );
