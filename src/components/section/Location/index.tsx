@@ -1,10 +1,10 @@
-import {Map, MapMarker, useKakaoLoader} from "react-kakao-maps-sdk";
+import {Map, MapMarker} from "react-kakao-maps-sdk";
 import {LocationWrapperStyles, MapContainer} from "./styles";
 
 const Location = () => {
-  const [loading, error] = useKakaoLoader({
-    appkey: "a64558d99894639bccef41457792c4d7",
-  });
+  // const [loading, error] = useKakaoLoader({
+  //   appkey: "a64558d99894639bccef41457792c4d7",
+  // });
   const location = {lat: 37.74913611, lng: 128.8784972};
   return (
     <LocationWrapperStyles>
