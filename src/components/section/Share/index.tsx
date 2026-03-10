@@ -8,7 +8,7 @@ const Share = () => {
 	const onSendLink = useCallback(() => {
 		const content = {
 			title:
-				"저희 아버님께서 칠순을 맞이하셨습니다. 평소 베풀어주신 사랑과 은혜에 감사드리며\n조촐하게나마 가족식사 모임 자리를 마련했습니다.\n다들 바쁘시겠지만 우리 가족 모두 함께하는 자리가 되었으면 합니다. :)",
+				"저희 아버님께서 칠순을 맞이하셨습니다. 평소 베풀어주신 사랑과 은혜에 감사드리며\n조촐하게나마 가족식사 모임 자리를 마련했습니다.\n다들 바쁘시겠지만 우리 가족 모두 함께하는 자리가 되었으면 합니다.",
 			description: "",
 			imageUrl: "https://invitation-app-theta.vercel.app/share.jpg",
 			link: {
