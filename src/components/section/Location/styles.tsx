@@ -44,8 +44,8 @@ export const LocationBtns = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
+  gap:1rem;
   .map_control_btns {
-    margin-right: 1rem;
     &:last-child: {
       margin-right: 0;
     }
